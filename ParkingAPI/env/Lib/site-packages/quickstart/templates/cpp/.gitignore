@@ -1,0 +1,7 @@
+*.o
+*.d
+*.log
+*.swp
+build/*
+project_name
+unit-test
