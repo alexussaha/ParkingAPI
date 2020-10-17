@@ -19,3 +19,11 @@ class ParkingViewSet(APIView):
         serializer = ParkingSerializer(parks, many=True)
         return Response({"cameras": serializer.data})
 
+
+    def post(self, request):
+        address_s = request.data.get("address")
+        park = Parking.objects.get(address = address_s)
+        print(park)
+        serializer = ParkingSerializer(park, many=False)
+        print(serializer.data)
+        return Response({"camera": serializer.data})
