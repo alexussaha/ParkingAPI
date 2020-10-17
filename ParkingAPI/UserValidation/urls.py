@@ -1,10 +1,6 @@
-"""
-Definition of urls for ParkingAPI.
-"""
-
 from django.urls import include, path
 from rest_framework import routers
-from app import views
+from UserValidation import views
 import app
 from django.contrib import admin
 
@@ -14,8 +10,6 @@ from django.contrib import admin
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
 urlpatterns = [
-    path('api/v1/', include('app.urls')),
-    path('api/v1/', include('UserValidation.urls')),
-    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    path('admin/', admin.site.urls),
+    path("users/", views.UserCreate.as_view(), name="user_create"),
+    path("login/", views.LoginView.as_view(), name="login"),
 ]

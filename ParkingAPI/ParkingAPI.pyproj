@@ -40,6 +40,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="app\tests.py" />
+    <Compile Include="app\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="app\views.py" />
     <Compile Include="app\__init__.py" />
     <Compile Include="app\migrations\__init__.py" />
@@ -48,11 +51,26 @@
     <Compile Include="ParkingAPI\settings.py" />
     <Compile Include="ParkingAPI\urls.py" />
     <Compile Include="ParkingAPI\wsgi.py" />
+    <Compile Include="UserValidation\admin.py" />
+    <Compile Include="UserValidation\apps.py" />
+    <Compile Include="UserValidation\migrations\__init__.py" />
+    <Compile Include="UserValidation\models.py" />
+    <Compile Include="UserValidation\serializers.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserValidation\tests.py" />
+    <Compile Include="UserValidation\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UserValidation\views.py" />
+    <Compile Include="UserValidation\__init__.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
     <Folder Include="app\migrations\" />
     <Folder Include="ParkingAPI\" />
+    <Folder Include="UserValidation\" />
+    <Folder Include="UserValidation\migrations\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
