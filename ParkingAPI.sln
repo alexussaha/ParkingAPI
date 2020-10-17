@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "ParkingAPI", "ParkingAPI\ParkingAPI.pyproj", "{66E7AEF2-CEEE-4846-929A-844423DFEC5C}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "FreeParkingModel", "FreeParkingModel\FreeParkingModel.pyproj", "{4376D795-FF59-4FFC-973A-F7C1C8C8D0AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{66E7AEF2-CEEE-4846-929A-844423DFEC5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66E7AEF2-CEEE-4846-929A-844423DFEC5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66E7AEF2-CEEE-4846-929A-844423DFEC5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4376D795-FF59-4FFC-973A-F7C1C8C8D0AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4376D795-FF59-4FFC-973A-F7C1C8C8D0AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
