@@ -1,12 +1,8 @@
-from django.contrib.auth.models import User, Group
+from app.models import Parking
 from rest_framework import serializers
 
-class UserSerializer(serializers.HyperlinkedModelSerializer):
+class ParkingSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = User
-        fields = ('url', 'username', 'email', 'groups')
+        model = Parking
+        fields = ('address', 'is_free')
 
-class GroupSerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = Group
-        fields = ['url', 'name']
